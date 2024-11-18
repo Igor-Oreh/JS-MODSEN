@@ -1,0 +1,5 @@
+const names = ['alice', 'bob', 'charlie', 'david']
+
+upperCaseNames = names.map((name) => name.toUpperCase())
+
+console.log(upperCaseNames) // Answer: map
