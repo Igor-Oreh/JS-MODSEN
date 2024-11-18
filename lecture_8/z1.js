@@ -1,7 +1,7 @@
 /*
 function countNumericValues(obj) {
     let countNumericProperties = 0;
-    for (prop of obj)
+    for (prop in obj)
         if (Number.isInteger(obj[prop]))
             countNumericProperties++;
     return countNumericProperties;
