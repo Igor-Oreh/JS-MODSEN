@@ -34,6 +34,14 @@ class EmailService extends MessageService {
         console.log(`Отправка email с сообщением: ${message}`);
     }
  }
+
+ class MailService extends MessageService {
+    sendMessage(message) {
+        console.log(`Отправлено письмо по почте с сообщением: ${message}`);
+    }
+ }
+
+
  
  class Notification {
     constructor(messageService) {
@@ -49,4 +57,9 @@ class EmailService extends MessageService {
  const emailService = new EmailService();
  const notification = new Notification(emailService);
  notification.notify("Важное сообщение");
+
+ 
+ const mailService = new MailService();
+ const oldNotification = new Notification(mailService);
+ oldNotification.notify("Важное сообщение");
  

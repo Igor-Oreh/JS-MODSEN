@@ -1,5 +1,4 @@
 function removeKeys(obj, propertyToDelete) {
-    const keys = Object.keys(obj)
     for (prop of propertyToDelete)
         delete obj[prop]
 }
